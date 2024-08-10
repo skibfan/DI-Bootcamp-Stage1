@@ -22,15 +22,18 @@ def player_input():
         try:
             row = int(row)
             col = int(col)
-            if board[row][col] == " ":
-                if player == 1: 
-                    board[row][col] = "X"
-                    player = 2
-                elif player == 2:
-                    board[row][col] = "O"
-                    player = 1
-            else: 
-                print("Field is occupied, try another!")
+            if row == 0 or col == 0: 
+                print("Invalid Input try again")
+            else:
+                if board[row - 1][col - 1] == " ":
+                    if player == 1: 
+                        board[row - 1][col - 1] = "X"
+                        player = 2
+                    elif player == 2:
+                        board[row - 1][col - 1] = "O"
+                        player = 1
+                else: 
+                    print("Field is occupied, try another!")
         except ValueError:
             print("Invalid Input try again")
     except ValueError:
