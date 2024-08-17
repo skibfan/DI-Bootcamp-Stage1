@@ -20,4 +20,15 @@ class TheIncredibles(ex4.Family):
         self.family_presentation()
     
 
-t
+the_incredibles = TheIncredibles([
+        {'name':'Michael','age':35,'gender':'Male','is_child':False,'power': 'fly','incredible_name':'MikeFly'},
+        {'name':'Sarah','age':32,'gender':'Female','is_child':False,'power': 'read minds','incredible_name':'SuperWoman'}
+    ])
+
+the_incredibles.use_power("Michael")
+
+the_incredibles.incredible_presentation()
+
+the_incredibles.born(name='Jack', age=0, gender='Male', is_child=True, power="Unknown Power")
+
+the_incredibles.incredible_presentation()
