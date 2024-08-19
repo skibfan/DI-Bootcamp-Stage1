@@ -1,0 +1,58 @@
+-- 1)
+-- SELECT * FROM customer
+-- 2)
+-- SELECT CONCAT(first_name,' ',last_name) as full_name 
+-- 	FROM customer
+-- 3)
+-- SELECT create_date FROM customer
+-- 	GROUP BY create_date
+-- 4)
+-- SELECT * FROM customer
+-- 	ORDER BY first_name
+-- 5)
+-- SELECT film_id, title, description, release_year, rental_rate 
+-- 	FROM film
+-- 	ORDER BY rental_rate
+-- 6)
+-- SELECT ad.address, ad.phone
+-- 	FROM customer AS cs
+-- 	INNER JOIN address AS ad
+-- 	ON cs.address_id = ad.address_id
+-- 	WHERE district ILIKE 'Texas'
+-- 7)
+-- SELECT * FROM film
+-- 	WHERE film_id = 15 OR film_id = 150
+-- 8)
+-- SELECT film_id, title, description, length, rental_rate 
+-- FROM film
+-- WHERE title ILIKE 'Lord of the R%'
+-- 9)
+-- SELECT film_id, title, description, length, rental_rate 
+-- FROM film
+-- WHERE title ILIKE 'Lo%'
+-- 10)
+-- SELECT * FROM film
+-- 	ORDER BY replacement_cost, film_id
+-- 	LIMIT 10
+-- 11)
+-- SELECT * FROM film
+-- 	ORDER BY replacement_cost, film_id
+-- 	OFFSET 10
+-- 	LIMIT 10
+-- 12)
+-- SELECT cs.first_name, cs.last_name, pay.amount, pay.payment_date
+-- 	FROM customer AS cs
+-- 	INNER JOIN payment AS pay
+-- 	ON cs.customer_id = pay.customer_id
+-- 	ORDER BY cs.customer_id
+-- 13)
+-- SELECT * FROM film
+-- 	LEFT JOIN inventory
+-- 	ON film.film_id = inventory.film_id
+-- 	WHERE inventory.film_id IS NULL
+-- 14)
+-- SELECT city.city, country.country 
+-- 	FROM city
+-- 	INNER JOIN country 
+-- 	ON city.country_id = country.country_id
+
