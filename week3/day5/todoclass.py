@@ -69,8 +69,8 @@ class TodoList():
                               port=self.DB_PORT)
 
         cursor = connection.cursor()
-        query = f'''DELETE FROM todo_list 
-        where item_name ILIKE '{self.note}%'
+        query = f'''DELETE FROM to_do_list 
+        where note ILIKE '{self.note}%'
         '''
         cursor.execute(query)
         connection.commit()
