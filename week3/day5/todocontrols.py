@@ -26,7 +26,7 @@ class TodoControls():
 
         cursor = connection.cursor()
         query = f'''SELECT * FROM to_do_list
-        WHERE note ILIKE '{note}%'
+        WHERE note ILIKE '{note}'
         '''
         cursor.execute(query)
         result = cursor.fetchone() 
@@ -56,7 +56,3 @@ class TodoControls():
 
 
 
-
-
-# print(TodoControls.showToDoItem('Wow, does it wo'))
-# print(TodoControls.showList())

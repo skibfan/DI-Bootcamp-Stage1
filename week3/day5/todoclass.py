@@ -56,7 +56,7 @@ class TodoList():
         cursor = connection.cursor()
         query = f'''UPDATE to_do_list
                 SET is_important='{new_importance}'
-                WHERE note ILIKE '{self.note}%'
+                WHERE note ILIKE '{self.note}'
                 '''
         cursor.execute(query)
         connection.commit()
@@ -70,17 +70,8 @@ class TodoList():
 
         cursor = connection.cursor()
         query = f'''DELETE FROM to_do_list 
-        where note ILIKE '{self.note}%'
+        where note ILIKE '{self.note}'
         '''
         cursor.execute(query)
         connection.commit()
 
-
-
-# q = TodoList('Wow, does it work? Truly wow Lets try')
-# # q.is_important = True
-# q.save()
-# q.is_done()
-
-s = TodoList('Wow, does it work? Truly wow Lets')
-s.toggle_is_important()
