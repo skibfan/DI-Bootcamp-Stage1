@@ -36,7 +36,4 @@ for (i = 0; i < planets.length; i++) {
 }
 
 
-// Finally append each div to the <section> in the HTML (presented below).
-// Bonus: Do the same process to create the moons.
-// Be careful, each planet has a certain amount of moons. How should you display them?
-// Should you still use an array for the planets ? Or an array of objects ?
+
