@@ -1,0 +1,27 @@
+#container {
+    display: flex;
+  }
+  
+  #color-selector {
+    margin: 10px;
+    padding: 10px
+  }
+  
+  #pixels-table {
+    margin: 10px;
+    padding: 10px;
+    border-collapse: separate;
+    border-spacing: 0px;
+    border: 1px solid black
+  }
+  
+  .color{
+    width: 40px;
+    height: 40px;
+  }
+  
+  .pixel {
+    width: 20px;
+    height: 20px;
+    border: 1px solid gray
+  }
