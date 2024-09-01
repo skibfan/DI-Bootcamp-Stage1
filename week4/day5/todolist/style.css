@@ -1,0 +1,35 @@
+body {
+    background-color: indianred;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    height: 40px;
+    width: 400px;
+    margin-bottom: 40px;
+}
+
+.listTasks {
+    background-color: white;
+    height: auto;
+    width: 340px;
+    padding: 25px;
+    
+}
+.listTasks > * {
+    padding-bottom: 10px;
+    border-bottom: solid teal;
+}
+
+.titleSpan {
+    font-size: 40px;
+    color: white;
+    margin: 70px;
+}
