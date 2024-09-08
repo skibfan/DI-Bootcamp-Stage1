@@ -1,0 +1,53 @@
+#myform {
+    background-color: rgb(64, 253, 20);
+    display: flex;
+    align-items: center; 
+    padding: 10px 20px;
+}
+
+#mysearch{
+    width: 60%;
+    margin: 0 40px;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+.container {
+    background-color: rgba(128, 0, 128, 1);
+    background-image: url('circuit-pattern.png');
+    display: flex;
+    flex-wrap: wrap;
+    padding: 150px;
+  }
+
+
+  .card {
+    /* Add shadows to create the "card" effect */
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    background-color: rgb(33, 139, 185);
+    background-image: url(card-pattern.png);
+    padding: 30px;
+    margin: 30px;
+    width: 300px;
+    border-radius: 25px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  /* On mouse-over, add a deeper shadow */
+  .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,1);
+  }
+
+  .img {
+    width: 200px;
+    height: 200px;
+    background-color: black;
+    border-radius: 100px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
