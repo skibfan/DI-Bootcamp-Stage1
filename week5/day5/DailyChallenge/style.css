@@ -1,0 +1,7 @@
+#myform {
+  display: block;
+  margin:auto;
+}
+body {
+  display: flex;
+}
