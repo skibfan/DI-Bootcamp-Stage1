@@ -72,19 +72,3 @@ const toMorse = (morseJS) => new Promise((resolve, reject) => {
 
 
 
-const joinWords = (morseTranslation) => {
-    let newMorse = document.createElement('div')
-    morseTranslation.forEach(element => {
-        let newLine = document.createElement('p')
-        newLine.textContent = element
-        newMorse.appendChild(newLine)
-    })
-    document.body.appendChild(newMorse)
-}
-
-
-
-toJs()
-.then(result => toMorse(result))
-.then(result => joinWords(result))
-      .catch(error => console.log(error))
