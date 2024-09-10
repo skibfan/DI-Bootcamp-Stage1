@@ -1,0 +1,36 @@
+body {
+    /* font-family: 'Star Wars', sans-serif; */
+
+    font-family: "Orbitron", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    height: 100vh;
+    background: url("http://wallpapercave.com/wp/pEeUsp1.jpg");
+    color: white;
+    /* background-image: url("http://imageshack.com/a/img922/3783/oyvsRd.png"); */
+}
+
+#curelem {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    text-align: center;
+    width: 400px;
+    height: 300px;
+    border: 2px solid yellowgreen;
+    /* font-size: 64px; */
+}
+
+
+.myimage {
+    width: 350px;
+    background-color: transparent;
+}
