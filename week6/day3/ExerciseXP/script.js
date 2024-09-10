@@ -4,7 +4,6 @@ function loading() {
     let loadingEl = document.createElement('i')
     loadingEl.classList.add('fa-solid', 'fa-cog', 'fa-spin') 
     loadingEl.style.fontSize = '64px'
-    // document.getElementById('curelem').appendChild(loadingEl)
     myDiv.replaceChildren(loadingEl)
     let loadingStr = document.createElement('p')
     loadingStr.textContent = 'Loading...'
