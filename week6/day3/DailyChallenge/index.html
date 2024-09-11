@@ -1,0 +1,24 @@
+<!doctype html> 
+<html lang="en"> 
+    <head> 
+        <meta charset="utf-8"> 
+        <title>Currency Converter</title>
+        <link rel="stylesheet" href="style.css">
+    </head> 
+    <body> 
+        <form id="myform" name="myform" onsubmit="getAmount(event)">
+            <label for="fromcur">From:</label>
+            <select id="fromcur"></select><br>
+            <label for="tocur">To:</label>
+            <select id="tocur"></select><br><br>
+            <label for="amounttoconv">Amount:</label>
+            <input type="number" min="0" id="amounttoconv" ><br>
+            
+            <input type="submit" value="Convert" ><br>
+
+            <output name="resultcalc" for="onsubmit" id="resultcalc"></output>
+        </form>
+      
+        <script src="script.js" defer></script>
+    </body> 
+</html> 
