@@ -11,21 +11,19 @@ function App() {
     {name: "Java", votes: 0}
   ])
 
-  const handleVote = (name) => {
-    setLanguages(languages.map(elem => 
-      elem.name === name 
-        ? {name: elem.name, votes: elem.votes + 1 } 
-        : elem
-    ));
+  const handleVote = (index) => {
+    const newLang = [...languages]
+    newLang[index].votes++
+    setLanguages(newLang)
   };
 
   return (
     <>
-      {languages.map( elem => {
-        return <div key={elem.name} className='container'  >
+      {languages.map( (elem, index) => {
+        return <div key={index} className='container'  >
         <p>{elem.votes}</p>
         <p>{elem.name}</p>
-        <button onClick={() => handleVote(elem.name)}>Click Here</button>
+        <button onClick={() => handleVote(index)}>Click Here</button>
     </div>
       }
 
